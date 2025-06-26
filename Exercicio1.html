@@ -9,15 +9,10 @@
     <h1>Java Script</h1>
     <br>
     <br>
-    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, laudantium ipsa sapiente perspiciatis facere aliquid, tempora corporis unde autem vitae, sit minima alias possimus? Exercitationem sit consectetur repudiandae est quaerat.
-    Rem, provident fuga. Nam ut aliquam quidem non eligendi, sequi corporis laudantium sunt similique eaque ipsa vel deserunt consequuntur omnis quod quaerat vero soluta reprehenderit dolorem magnam error? Rem, inventore!
-    Fugiat natus incidunt labore, sunt tenetur ea, eligendi consectetur quia vitae neque unde facilis. Nesciunt blanditiis exercitationem illum, commodi voluptates, repellat nemo dolore modi corrupti obcaecati molestiae reiciendis quos explicabo.
-    Assumenda explicabo error, rem animi ipsam perspiciatis sed, sunt, maiores cupiditate quisquam veritatis repellendus consequatur praesentium tenetur sapiente labore at nesciunt accusantium vel ipsum odit nam doloribus? Pariatur, ea incidunt.
-    Odio placeat suscipit labore exercitationem ab cupiditate alias ipsam architecto dolores hic corrupti nulla autem voluptas, sit ex iste in sequi amet molestias saepe sapiente delectus a rem. Maxime, totam?
-    Explicabo repellat mollitia fugit. Nihil illum ex maiores quo nulla nesciunt minus expedita similique iste illo, sequi commodi magni ipsam praesentium error recusandae provident inventore. Eaque cumque magni blanditiis culpa.
-    Vitae modi consectetur similique vel temporibus quaerat aspernatur iusto! Ullam provident ex facere dignissimos voluptates dolores placeat omnis, ea suscipit? Optio eveniet atque debitis officiis deleniti sed aspernatur dignissimos non.</h3>
+    <p>BlaBlaBla</p>
     
-    <button id="botao">Clique Aqui!</button>
+    <button id="TrocaTexto">Clique Aqui!</button>
+    <button onclick="TrocaTexto()">Volte Aqui!</button>
 
 
 
@@ -25,10 +20,13 @@
         const button = document.getElementById("botao");
         button.addEventListener("click", function(){
             console.log("Entrou!")
-            
-
+            h1.textContent = "Java Script"
+            p.textContent = "BlaBlaBla"
+        })
         function TrocaTexto(){
-            
+            h1.textContent = "Novo H1"
+            p.textContent =  "Novo p"
+   
         }
     </script>
 </body>
