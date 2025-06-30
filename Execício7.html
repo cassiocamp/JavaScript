@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 7</title>
+</head>
+<body>
+    <div>
+        <img id="imagem" src="https://cdn.awsli.com.br/2500x2500/954/954868/produto/35666183/a490b9398a.jpg">
+        <button id="botao">Aumentar imagem</button>
+    </div>
+
+    <script>
+        const imagem= document.getElementById("imagem");
+        const button = document.getElementById("botao");
+
+        let larguraAtual = 200;
+        let alturaAtual = 150;
+        const incremento = 50;
+
+        botaoAumentar.addEventListener('click', () => {
+        larguraAtual += incremento;
+        alturaAtual += incremento;
+        imagem.width = larguraAtual;
+        imagem.height = alturaAtual;
+        });
+        
+    </script>
+</body>
+</html>
