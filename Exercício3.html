@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Alternar Visibilidade com &lt;script&gt;</title>
+  <style>
+    #blocoTexto {
+      border: 1px solid #333;
+      padding: 10px;
+      width: 300px;
+      margin-bottom: 10px;
+    }
+    .escondido {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="blocoTexto">
+    Este é o bloco de texto que será mostrado ou ocultado ao clicar no botão.
+  </div>
+
+  <button id="btnToggle">Ocultar texto</button>
+
+  <script>
+    document.getElementById('btnToggle').onclick = function() {
+      const bloco = document.getElementById('blocoTexto');
+      const oculto = bloco.classList.toggle('escondido');
+      this.textContent = oculto ? 'Mostrar texto' : 'Ocultar texto';
+    };
+  </script>
+
+</body>
+</html>

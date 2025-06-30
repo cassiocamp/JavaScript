@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <img id="imagem" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUKzwBPAAGmSj2xFqDBm4NxrCiIl_1oRSsrg&s">
+    </div>
+    <button id="botao">Click me!</button>
+
+    <script>
+        const img = document.getElementById("imagem");
+        const botao = document.getElementById("botao");
+
+        // Mostra o link da imagem no console
+        console.log(img.getAttribute("src"));
+
+        // Ao clicar no botão, muda o fundo para azul
+        botao.addEventListener("click", () => {
+            document.body.style.backgroundColor = "blue";
+        });
+    </script>
+</body>
+</html>

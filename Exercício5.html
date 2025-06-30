@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 5</title>
+</head>
+<body>
+  <img id="imagem" url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzIqHacMk44tPIIER36iF9UtGA1W-Bjupw6Q&s" alt="Imagem" width="300">
+  <button onclick="trocarImagem()">Próxima Imagem</button>
+
+  <script>
+    const imagens = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzIqHacMk44tPIIER36iF9UtGA1W-Bjupw6Q&s", "https://pbs.twimg.com/media/FXKqJ5NWQAASEcm.png", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJCg6GlaCcu-BcNLDZ6P5xv388E7zqAxzmYg&s"];
+    let indiceAtual = 0;
+
+    function trocarImagem() {
+      indiceAtual = (indiceAtual + 1) % imagens.length;
+      document.getElementById("imagem").src = imagens[indiceAtual];
+    }
+  </script>
+</body>
+</html>

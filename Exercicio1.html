@@ -6,27 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Java Script</h1>
-    <br>
-    <br>
-    <p>BlaBlaBla</p>
+    <h1 id="titulo">Java Script</h1>
+    <p id="paragrafo">BlaBlaBla</p>
     
-    <button id="TrocaTexto">Clique Aqui!</button>
     <button onclick="TrocaTexto()">Volte Aqui!</button>
 
 
 
     <script>
-        const button = document.getElementById("botao");
-        button.addEventListener("click", function(){
-            console.log("Entrou!")
-            h1.textContent = "Java Script"
-            p.textContent = "BlaBlaBla"
-        })
         function TrocaTexto(){
-            h1.textContent = "Novo H1"
-            p.textContent =  "Novo p"
-   
+            document.getElementById("titulo").innerText = "ATV Concluída";
+            document.getElementById("paragrafo").innerText = "consegui"
         }
     </script>
 </body>
